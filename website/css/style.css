@@ -1,0 +1,524 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 16, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 18, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 22, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 27, ../scss/style.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 31, ../scss/style.scss */
+body {
+  font-family: "Lato", sans-serif;
+  color: #2e2f2f;
+}
+
+/* line 35, ../scss/style.scss */
+img {
+  display: block;
+}
+
+/* line 38, ../scss/style.scss */
+h1 {
+  text-align: center;
+  color: #353535;
+  text-shadow: 0.5px 0.5px grey;
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* line 45, ../scss/style.scss */
+h2 {
+  text-align: center;
+  color: #353535;
+  text-shadow: 0.5px 0.5px grey;
+  margin: 0;
+  font-size: 2.2em;
+}
+
+/* line 52, ../scss/style.scss */
+h3 {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+/* line 58, ../scss/style.scss */
+p {
+  color: #255c8e;
+  font-weight: 100;
+  font-size: 1.3em;
+}
+
+/* line 63, ../scss/style.scss */
+button {
+  text-align: center;
+  color: white;
+  border: none;
+  background-color: #ef6508;
+  margin: 0 0.5em;
+  border-radius: 50px;
+  padding: 10px 25px;
+  transition: 0.4s ease all;
+  min-width: 90px;
+  max-width: 100px;
+  width: 20%;
+  margin: 0.5em 0.5em;
+}
+/* line 76, ../scss/style.scss */
+button:hover {
+  background-color: #ec843e;
+}
+
+/* line 80, ../scss/style.scss */
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 88, ../scss/style.scss */
+.navigation {
+  position: fixed;
+  top: 0;
+  text-align: right;
+  width: 100%;
+  background-color: white;
+  padding: 2em 0;
+  z-index: 10;
+  -webkit-box-shadow: 0px 1px 1px 0px #8c8c8c;
+  -moz-box-shadow: 0px 1px 1px 0px #8c8c8c;
+  box-shadow: 0px 1px 1px 0px #8c8c8c;
+}
+/* line 102, ../scss/style.scss */
+.navigation ul {
+  display: block;
+  padding: 0em 1em;
+  margin: 0px;
+}
+/* line 107, ../scss/style.scss */
+.navigation li {
+  color: white;
+  display: inline-block;
+  padding: 0px 2%;
+}
+/* line 112, ../scss/style.scss */
+.navigation a {
+  text-decoration: none;
+  color: #255c8e;
+  font-size: 1em;
+}
+/* line 116, ../scss/style.scss */
+.navigation a:hover {
+  color: #ef6508;
+}
+/* line 120, ../scss/style.scss */
+.navigation .logo {
+  position: absolute;
+  top: 1em;
+  width: 40%;
+  max-width: 80px;
+  z-index: 20;
+}
+
+/* line 129, ../scss/style.scss */
+.header {
+  background: linear-gradient(68deg, #75aadb, #255c8e);
+  position: relative;
+  padding-top: 4em;
+}
+
+/* line 135, ../scss/style.scss */
+.content {
+  padding: 4em 0 0em 0;
+  width: 100%;
+  position: relative;
+}
+/* line 139, ../scss/style.scss */
+.content h1 {
+  color: #2d2d2d;
+}
+/* line 142, ../scss/style.scss */
+.content p {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+/* line 148, ../scss/style.scss */
+.content .background-logo {
+  width: 60%;
+  margin: 0 auto;
+  max-width: 400px;
+}
+/* line 153, ../scss/style.scss */
+.content .button-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1em;
+}
+/* line 159, ../scss/style.scss */
+.content .laptop-container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 162, ../scss/style.scss */
+.content .laptop-container .laptop {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 700px;
+  position: relative;
+  bottom: -70px;
+}
+
+/* line 174, ../scss/style.scss */
+.secondary-content {
+  padding: 8em 0 4em 0;
+  background-color: white;
+  border-bottom: 1px solid #faf9f9;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 181, ../scss/style.scss */
+.secondary-content .icon-container {
+  padding: 1.5em 0;
+}
+/* line 183, ../scss/style.scss */
+.secondary-content .icon-container div {
+  padding: 2em 0;
+}
+/* line 186, ../scss/style.scss */
+.secondary-content .icon-container img {
+  padding: 1em;
+  width: 50%;
+  margin: 0 auto;
+  max-width: 125px;
+}
+/* line 192, ../scss/style.scss */
+.secondary-content .icon-container h3 {
+  color: #2e2f2f;
+  font-weight: 400;
+}
+/* line 197, ../scss/style.scss */
+.secondary-content .fa {
+  margin: 0 0.15em;
+  color: #2e2f2f;
+}
+/* line 201, ../scss/style.scss */
+.secondary-content p {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+/* line 208, ../scss/style.scss */
+.form {
+  background-color: #faf9f9;
+  padding: 7.5em 0em;
+}
+/* line 211, ../scss/style.scss */
+.form form {
+  width: 80%;
+  padding: 2em 0em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* line 217, ../scss/style.scss */
+.form input {
+  display: block;
+  margin: 1em 0em;
+  width: 100%;
+  padding: 10px;
+}
+/* line 223, ../scss/style.scss */
+.form textarea {
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+}
+/* line 229, ../scss/style.scss */
+.form button {
+  display: block;
+  margin: 0 auto;
+}
+/* line 233, ../scss/style.scss */
+.form h2 {
+  font-size: 2.5em;
+}
+
+/* line 237, ../scss/style.scss */
+footer {
+  padding: 4em 0;
+  background-color: #2d2d2d;
+}
+/* line 240, ../scss/style.scss */
+footer a {
+  color: #75aadb;
+  text-decoration: none;
+}
+/* line 244, ../scss/style.scss */
+footer img {
+  width: 80%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+/* line 249, ../scss/style.scss */
+footer ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+/* line 254, ../scss/style.scss */
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+/* line 257, ../scss/style.scss */
+footer a:hover {
+  color: #ef6508;
+}
+/* line 261, ../scss/style.scss */
+footer p {
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+@media screen and (min-width: 430px) {
+  /* line 269, ../scss/style.scss */
+  .navigation {
+    position: fixed;
+    top: 0;
+    text-align: right;
+    width: 100%;
+    background-color: white;
+    padding: 2em 0;
+    z-index: 10;
+    border-bottom: 1px solid #faf9f9;
+  }
+  /* line 281, ../scss/style.scss */
+  .navigation ul {
+    display: block;
+    padding: 0em 1em;
+    margin: 0px;
+  }
+  /* line 286, ../scss/style.scss */
+  .navigation li {
+    color: white;
+    display: inline-block;
+    padding: 0px 2%;
+  }
+  /* line 291, ../scss/style.scss */
+  .navigation a {
+    text-decoration: none;
+    color: #255c8e;
+    font-size: 1em;
+  }
+  /* line 295, ../scss/style.scss */
+  .navigation a:hover {
+    color: #ef6508;
+  }
+  /* line 299, ../scss/style.scss */
+  .navigation .logo {
+    position: absolute;
+    left: 2em;
+    top: 1em;
+    width: 40%;
+    max-width: 100px;
+    z-index: 20;
+  }
+
+  /* line 309, ../scss/style.scss */
+  .content h1 {
+    font-size: 3.2em;
+  }
+
+  /* line 314, ../scss/style.scss */
+  .secondary-content h2 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 323, ../scss/style.scss */
+  .wrapper {
+    max-width: 1000px;
+  }
+
+  /* line 328, ../scss/style.scss */
+  .secondary-content .icon-container div {
+    width: 29%;
+    float: left;
+    padding: 2%;
+  }
+}
+/*
+    Name: YouTubePopUp
+    Description: jQuery plugin to display YouTube video in PopUp, responsive and retina, easy to use.
+    Version: 1.0.0
+    Plugin URL: http://wp-time.com/youtube-popup-jquery-plugin/
+    Written By: Qassim Hassan
+    Twitter: @QQQHZ
+    Websites: wp-time.com | qass.im | wp-plugins.in
+    Dual licensed under the MIT and GPL licenses:
+        http://www.opensource.org/licenses/mit-license.php
+        http://www.gnu.org/licenses/gpl.html
+    Copyright (c) 2016 - Qassim Hassan
+*/
+/* line 353, ../scss/style.scss */
+.YouTubePopUp-Wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 9999999999999;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: YouTubePopUp;
+  animation-name: YouTubePopUp;
+}
+
+@-webkit-keyframes YouTubePopUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes YouTubePopUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 391, ../scss/style.scss */
+body.logged-in .YouTubePopUp-Wrap {
+  /* For WordPress */
+  top: 32px;
+  z-index: 99998;
+}
+
+/* line 396, ../scss/style.scss */
+.YouTubePopUp-Content {
+  max-width: 680px;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+/* line 404, ../scss/style.scss */
+.YouTubePopUp-Content iframe {
+  max-width: 100% !important;
+  width: 100% !important;
+  display: block !important;
+  height: 480px !important;
+  border: none !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+/* line 416, ../scss/style.scss */
+.YouTubePopUp-Hide {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: YouTubePopUpHide;
+  animation-name: YouTubePopUpHide;
+}
+
+@-webkit-keyframes YouTubePopUpHide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes YouTubePopUpHide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 445, ../scss/style.scss */
+.YouTubePopUp-Close {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  bottom: 528px;
+  right: 0px;
+  margin: auto 0;
+  width: 24px;
+  height: 24px;
+  background: url(close.png) no-repeat;
+  background-size: 24px 24px;
+  -webkit-background-size: 24px 24px;
+  -moz-background-size: 24px 24px;
+  -o-background-size: 24px 24px;
+}
+
+/* line 461, ../scss/style.scss */
+.YouTubePopUp-Close:hover {
+  opacity: 0.5;
+}
+
+@media all and (max-width: 768px) and (min-width: 10px) {
+  /* line 466, ../scss/style.scss */
+  .YouTubePopUp-Content {
+    max-width: 90%;
+  }
+}
+@media all and (max-width: 600px) and (min-width: 10px) {
+  /* line 472, ../scss/style.scss */
+  .YouTubePopUp-Content iframe {
+    height: 320px !important;
+  }
+
+  /* line 476, ../scss/style.scss */
+  .YouTubePopUp-Close {
+    bottom: 362px;
+  }
+}
+@media all and (max-width: 480px) and (min-width: 10px) {
+  /* line 482, ../scss/style.scss */
+  .YouTubePopUp-Content iframe {
+    height: 220px !important;
+  }
+
+  /* line 486, ../scss/style.scss */
+  .YouTubePopUp-Close {
+    bottom: 262px;
+  }
+}

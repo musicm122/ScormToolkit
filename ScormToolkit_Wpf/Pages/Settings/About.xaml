@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="ScormToolkit_Wpf.Pages.Settings.About"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d"
+             DataContext="{Binding About, Source={StaticResource Locator}}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel MinWidth="200">
+                <TextBlock Text="ABOUT" Style="{StaticResource Heading2}" />
+                <TextBlock >
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="Version {}">
+                            <Binding Path="Version"/>
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+                <mui:BBCodeBlock BBCode="[size=20] [url=http://www.scormtoolkit.com]Scorm Toolkit [/url]" />
+                <TextBlock Text="Simplify your scorm cloud administration. No more obscure or missing features. Control all the power of the scorm cloud in one simple app." Margin="0,0,0,8" TextWrapping="Wrap" />
+                <mui:BBCodeBlock BBCode="[url=http://www.hackerferret.com] © 2016 Hacker Ferret LLC [/url]" />
+
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

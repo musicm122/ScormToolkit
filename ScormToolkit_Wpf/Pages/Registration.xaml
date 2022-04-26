@@ -1,0 +1,157 @@
+﻿<UserControl
+    x:Class="ScormToolkit_Wpf.Pages.Registration"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:core="clr-namespace:System;assembly=mscorlib"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:datapager="clr-namespace:Syncfusion.UI.Xaml.Controls.DataPager;assembly=Syncfusion.SfGrid.WPF"
+    xmlns:local="clr-namespace:ScormToolkit_Wpf.Model"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:valConverters="clr-namespace:ScormToolkit_Wpf.ValueConverters"
+    d:DesignHeight="600"
+    d:DesignWidth="800"
+    DataContext="{Binding Registration, Source={StaticResource Locator}}"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <local:SortFieldList x:Key="FilterFields">
+            <local:SortField DisplayName="(Unsorted)" />
+            <local:SortField DisplayName="Registration Id" PropertyName="RegistrationId" />
+            <local:SortField DisplayName="Course Id" PropertyName="CourseId" />
+            <local:SortField DisplayName="Course Title" PropertyName="CourseTitle" />
+            <local:SortField DisplayName="Last Course Version Launched" PropertyName="LastCourseVersionLaunched" />
+            <local:SortField DisplayName="Learner Id" PropertyName="LearnerId" />
+            <local:SortField DisplayName="Learner First Name" PropertyName="LearnerFirstName" />
+            <local:SortField DisplayName="Learner Last Name" PropertyName="LearnerLastName" />
+            <local:SortField DisplayName="Email" PropertyName="Email" />
+            <local:SortField DisplayName="Create Date" PropertyName="CreateDate" />
+            <local:SortField DisplayName="First Access Date" PropertyName="FirstAccessDate" />
+            <local:SortField DisplayName="Last Access Date" PropertyName="LastAccessDate" />
+            <local:SortField DisplayName="Completed Date" PropertyName="CompletedDate" />
+        </local:SortFieldList>
+        <valConverters:EmptyListVisibilityConverter x:Key="OnEmptyListHide" />
+        <valConverters:EmptyListVisibilityInverseConverter x:Key="OnEmptyListShow" />
+        <PathGeometry x:Key="HomeIconData">
+            M14.295026,0C20.324566,7.6098331E-08,25.805967,4.1556529,27.845625,9.9731506L27.848595,9.9819225 30.086088,2.5850097 32.000101,3.16301 28.548079,14.575019 27.720818,14.325199 27.692038,14.406989 18.682106,11.236992 19.3461,9.349995 26.303652,11.797894 26.28668,11.72872C24.866867,6.2106613 19.753498,1.9999999 14.295026,1.9999996 7.5159818,1.9999999 1.9999975,7.4879755 1.9999973,14.234007 1.9999975,20.979001 7.5159818,26.466001 14.295026,26.466001 15.442974,26.466001 16.578959,26.308957 17.671974,25.99896L18.217018,27.922971C16.947001,28.282956 15.628032,28.466001 14.295026,28.466001 6.4129559,28.466001 0,22.080991 0,14.234007 0,6.3850092 6.4129559,7.6098331E-08 14.295026,0z
+        </PathGeometry>
+        <PathGeometry x:Key="DetailsIcon">
+            M2,3H22C23.05,3 24,3.95 24,5V19C24,20.05 23.05,21 22,21H2C0.95,21 0,20.05 0,19V5C0,3.95 0.95,3 2,3M14,6V7H22V6H14M14,8V9H21.5L22,9V8H14M14,10V11H21V10H14M8,13.91C6,13.91 2,15 2,17V18H14V17C14,15 10,13.91 8,13.91M8,6A3,3 0 0,0 5,9A3,3 0 0,0 8,12A3,3 0 0,0 11,9A3,3 0 0,0 8,6Z
+        </PathGeometry>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+
+            <ColumnDefinition Width="0.1*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0" LastChildFill="True">
+            <mui:ModernButton
+                Grid.Row="0"
+                Grid.Column="0"
+                Margin="2"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Command="{Binding FetchCoursesRelayCommand}"
+                Content="Refresh"
+                DockPanel.Dock="Left"
+                IconData="{StaticResource HomeIconData}" />
+
+            <Label
+                Grid.Row="0"
+                Grid.Column="2"
+                Margin="6"
+                HorizontalAlignment="Right"
+                DockPanel.Dock="Left"
+                Target="{Binding ElementName=FilterText}">
+                Filter:
+            </Label>
+            <TextBox
+                x:Name="FilterText"
+                Grid.Row="0"
+                Grid.Column="4"
+                MinWidth="250"
+                Margin="6"
+                HorizontalAlignment="Stretch"
+                DockPanel.Dock="Left"
+                TextChanged="OnFilter" />
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="6"
+                Margin="6"
+                DockPanel.Dock="Left"
+                Text="{Binding RegistrationCollection.Count, StringFormat='Total : \{0\}'}" />
+
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="8"
+                Margin="6"
+                HorizontalAlignment="Right"
+                DockPanel.Dock="Left"
+                Text="Filter by" />
+            <ComboBox
+                x:Name="FilterField"
+                Grid.Row="0"
+                Grid.Column="10"
+                MinWidth="150"
+                Margin="6"
+                HorizontalAlignment="Right"
+                DisplayMemberPath="DisplayName"
+                DockPanel.Dock="Left"
+                ItemsSource="{StaticResource FilterFields}"
+                SelectedIndex="0"
+                SelectedValuePath="PropertyName" />
+        </DockPanel>
+        <TextBlock
+            Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="8"
+            Margin="6"
+            Style="{StaticResource Heading2}"
+            Text="There are no available registrations to display at this time. "
+            Visibility="{Binding RegistrationCollection, Converter={StaticResource OnEmptyListShow}}" />
+
+        <DataGrid
+            Name="RegistrationGrid"
+            Grid.Row="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="8"
+            Margin="6"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding RegistrationCollection}"
+            SelectedItem="{Binding SelectedRegistration}"
+            SelectionMode="Single"
+            Visibility="{Binding RegistrationCollection, Converter={StaticResource OnEmptyListHide}}">
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Command="{Binding ViewDetailedRegistration}" Header="View Details" />
+                    <MenuItem Command="{Binding CopyRegistration}" Header="Copy" />
+                    <Separator />
+                    <MenuItem Command="{Binding ResetRegistration}" Header="Reset Registration" />
+                    <MenuItem Command="{Binding DeleteRegistration}" Header="Delete" />
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+            <DataGrid.Columns>
+                <mui:DataGridTextColumn Binding="{Binding LearnerFirstName}" Header="Learner First Name" />
+                <mui:DataGridTextColumn Binding="{Binding LearnerLastName}" Header="Learner Last Name" />
+                <mui:DataGridTextColumn Binding="{Binding RegistrationId}" Header="Registration Id" />
+                <mui:DataGridTextColumn Binding="{Binding CourseTitle}" Header="Course Title" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

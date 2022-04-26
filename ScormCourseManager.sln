@@ -1,0 +1,138 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScormLogic", "ScormLogic\ScormLogic.csproj", "{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B493782B-CA80-4C1C-8588-2C5D0EF5CD4F}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScormToolkit_Wpf", "ScormToolkit_Wpf\ScormToolkit_Wpf.csproj", "{BB64EA30-C5A7-4DE3-8152-0A57344B043F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerFerretCommon", "Common\HackerFerretCommon.csproj", "{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{53EED369-7A7C-47B5-82CD-BF075C77D006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerFerretLogger", "Logger\HackerFerretLogger.csproj", "{20398970-BFB9-4F89-A75A-B86098DF49FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Debug|ARM.Build.0 = Debug|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Debug|x64.Build.0 = Debug|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Debug|x86.Build.0 = Debug|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Release|ARM.ActiveCfg = Release|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Release|ARM.Build.0 = Release|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Release|x64.ActiveCfg = Release|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Release|x64.Build.0 = Release|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Release|x86.ActiveCfg = Release|Any CPU
+		{4AD5B2B6-973C-4C57-9A1D-B66746A788AA}.Release|x86.Build.0 = Release|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Debug|ARM.Build.0 = Debug|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Debug|x64.Build.0 = Debug|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Debug|x86.Build.0 = Debug|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Release|ARM.ActiveCfg = Release|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Release|ARM.Build.0 = Release|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Release|x64.ActiveCfg = Release|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Release|x64.Build.0 = Release|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Release|x86.ActiveCfg = Release|Any CPU
+		{BB64EA30-C5A7-4DE3-8152-0A57344B043F}.Release|x86.Build.0 = Release|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Debug|ARM.Build.0 = Debug|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Debug|x64.Build.0 = Debug|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Debug|x86.Build.0 = Debug|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Release|ARM.ActiveCfg = Release|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Release|ARM.Build.0 = Release|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Release|x64.ActiveCfg = Release|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Release|x64.Build.0 = Release|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Release|x86.ActiveCfg = Release|Any CPU
+		{50AB7EDA-3DE7-4520-AF71-E5954D8DAEE9}.Release|x86.Build.0 = Release|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Debug|ARM.Build.0 = Debug|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Debug|x64.Build.0 = Debug|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Debug|x86.Build.0 = Debug|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Release|ARM.ActiveCfg = Release|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Release|ARM.Build.0 = Release|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Release|x64.ActiveCfg = Release|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Release|x64.Build.0 = Release|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Release|x86.ActiveCfg = Release|Any CPU
+		{53EED369-7A7C-47B5-82CD-BF075C77D006}.Release|x86.Build.0 = Release|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Debug|ARM.Build.0 = Debug|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Debug|x64.Build.0 = Debug|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Debug|x86.Build.0 = Debug|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Release|ARM.ActiveCfg = Release|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Release|ARM.Build.0 = Release|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Release|x64.ActiveCfg = Release|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Release|x64.Build.0 = Release|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Release|x86.ActiveCfg = Release|Any CPU
+		{20398970-BFB9-4F89-A75A-B86098DF49FC}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://hackerferretsoftware.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Common\\HackerFerretCommon.csproj
+		SccProjectName1 = Common
+		SccLocalPath1 = Common
+		SccProjectUniqueName2 = ScormLogic\\ScormLogic.csproj
+		SccProjectName2 = ScormLogic
+		SccLocalPath2 = ScormLogic
+		SccProjectUniqueName3 = ScormToolkit_Wpf\\ScormToolkit_Wpf.csproj
+		SccProjectName3 = ScormToolkit_Wpf
+		SccLocalPath3 = ScormToolkit_Wpf
+		SccProjectUniqueName4 = DataAccess\\DataAccess.csproj
+		SccProjectName4 = DataAccess
+		SccLocalPath4 = DataAccess
+		SccProjectUniqueName5 = Logger\\HackerFerretLogger.csproj
+		SccProjectName5 = Logger
+		SccLocalPath5 = Logger
+	EndGlobalSection
+EndGlobal
