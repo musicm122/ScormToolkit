@@ -1,4 +1,3 @@
-# ScormToolkit
-Scorm Toolkit
+Tooling for simplifying working with the SCORM API. 
 
-musicm122.github.io/scormtoolkit/
+About [Scorm Toolkit](musicm122.github.io/scormtoolkit/)
